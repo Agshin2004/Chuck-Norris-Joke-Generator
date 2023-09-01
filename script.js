@@ -19,7 +19,7 @@ function getJoke() {
 }
 
 function addJokeToDOM(joke) {
-  if (joke.length > 120) {
+  if (joke.length > 190) {
     alert('page will refresh in 5 seconds');
     setTimeout(() => getJoke(), 5000)
   }
