@@ -19,6 +19,9 @@ function getJoke() {
 }
 
 function addJokeToDOM(joke) {
+  if (joke.length > 120) {
+    setTimeout(() => getJoke(), 5000)
+  }
   jokeDiv.innerHTML = joke;
 }
 
